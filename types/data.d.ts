@@ -19,3 +19,5 @@ export type TElectricVehicleData = {
 };
 
 export type TData = Array<TElectricVehicleData>;
+
+export type TElectricRangeData = Array<{ range: number; model: string }>;

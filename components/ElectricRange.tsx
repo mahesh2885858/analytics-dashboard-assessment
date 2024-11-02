@@ -1,19 +1,15 @@
 "use client";
-import { TData } from "@/types/data";
-import React from "react";
+import { TElectricRangeData } from "@/types/data";
 import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
-function Company(data: { data: TData }) {
-  const d = data.data.map((i) => ({
-    "Electric Range": parseInt(i["Electric Range"]),
-  }));
+function ElectricRange(props: { data: TElectricRangeData }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <PieChart width={500} height={200}>
         <Pie
-          data={d}
+          data={props.data}
           dataKey="Electric Range"
-          nameKey="Range"
+          nameKey="company"
           cx="125"
           cy="80"
           outerRadius="80%"
@@ -25,4 +21,4 @@ function Company(data: { data: TData }) {
   );
 }
 
-export default Company;
+export default ElectricRange;
