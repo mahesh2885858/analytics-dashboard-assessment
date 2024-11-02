@@ -10,6 +10,6 @@ export const getParsedData = async () => {
     columns: true,
     skip_empty_lines: true,
   });
-  console.log(records[0]);
-  return records.slice(0, 1000);
+
+  return records.slice(0, 5000); // Getting first 5000 records
 };

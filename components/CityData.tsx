@@ -57,7 +57,7 @@ function CityData(props: { data: TCityWiseData }) {
                 width={10}
                 fill="#8884d8"
                 dataKey="noOfVehicles"
-                name={"Total number of vehicles per city"}
+                name={"Total number of vehicles per company"}
               />
               <Tooltip />
               <CartesianGrid strokeDasharray="3 3" />
