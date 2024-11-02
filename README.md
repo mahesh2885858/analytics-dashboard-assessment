@@ -1,6 +1,6 @@
 ## Live demo
 
-You can see the live demo here : [https://analytics-dashboard-assessment-1af4.vercel.app/](Live Demo)
+You can see the live demo here : [Live Demo](https://analytics-dashboard-assessment-1af4.vercel.app/)
 
 ## To run locally
 
