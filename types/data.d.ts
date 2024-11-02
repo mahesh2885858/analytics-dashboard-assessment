@@ -25,3 +25,14 @@ export type TElectricRangeData = Array<{ range: number; model: string }>;
 export type TPriceData = Array<{ price: number; model: string }>;
 
 export type TModelWiseData = Array<{ model: string; numberOfVehicles: number }>;
+
+export type TCompanyWiseData = {
+  name: string;
+  models: Array<{ name: string; noOfVehicles: number }>;
+  noOfVehicles: number;
+};
+
+export type TCityWiseData = Array<{
+  city: string;
+  companies: Array<TCompanyWiseData>;
+}>;

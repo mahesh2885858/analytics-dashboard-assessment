@@ -35,6 +35,7 @@ function Model(props: { data: TModelWiseData }) {
           dataKey="numberOfVehicles"
           stroke="#8884d8"
           fill="#8884d8"
+          name="Total sales per modal"
         />
         <Legend />
       </AreaChart>

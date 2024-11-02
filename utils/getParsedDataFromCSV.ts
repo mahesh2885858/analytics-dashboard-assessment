@@ -11,5 +11,5 @@ export const getParsedData = async () => {
     skip_empty_lines: true,
   });
   console.log(records[0]);
-  return records.slice(0, 10);
+  return records.slice(0, 1000);
 };
