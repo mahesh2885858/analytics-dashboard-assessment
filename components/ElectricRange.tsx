@@ -1,22 +1,34 @@
 "use client";
 import { TElectricRangeData } from "@/types/data";
-import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 function ElectricRange(props: { data: TElectricRangeData }) {
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <PieChart width={500} height={200}>
-        <Pie
-          data={props.data}
-          dataKey="Electric Range"
-          nameKey="company"
-          cx="125"
-          cy="80"
-          outerRadius="80%"
+    <ResponsiveContainer width={"100%"} height={250}>
+      <BarChart data={props.data} width={500} height={250}>
+        <Bar
+          type="monotone"
+          width={10}
           fill="#8884d8"
+          dataKey="range"
+          name={"Range"}
         />
         <Tooltip />
-      </PieChart>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="model" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+      </BarChart>
     </ResponsiveContainer>
   );
 }

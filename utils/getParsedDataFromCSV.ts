@@ -10,6 +10,6 @@ export const getParsedData = async () => {
     columns: true,
     skip_empty_lines: true,
   });
-
+  console.log(records[0]);
   return records.slice(0, 10);
 };
